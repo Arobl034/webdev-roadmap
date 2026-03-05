@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { TOPICS, STATUS_CONFIG, DIFFICULTIES, STORAGE_KEY } from "./topics.js";
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
@@ -14,8 +14,7 @@ function saveProgress(p) {
 
 // ── Styles (scoped via class prefix "rdm-") ───────────────────────────────────
 const css = `
-  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Syne:wght@400;600;700;800&display=swap');
-
+  
   :root {
     --bg:       #080c10;
     --surface:  #0d1117;
